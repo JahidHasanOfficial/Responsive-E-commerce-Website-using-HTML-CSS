@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website </title>
+    <!----font awsome CDN------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+         <!----Navbar start he=re---->
+         <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <nav id="menu">
+        <ul class="nav-upper flex-spece-around">
+            <li class="nav-list"><img src="image/logo.png" alt="" class="image-logo"></li>
+            <li class="nav-list"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-list"><a href="register.html" class="nav-link">Register</a></li>
+            <li class="nav-list"><a href="login.html" class="nav-link">Login</a></li>
+            <li class="nav-list"><a href="index.html" class="nav-link">Logout</a></li>
+            <li class="nav-list"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-list"><a href="profile.html" class="nav-link"><img class="profile-icon" src="image/profile.jpg" alt="profile icon"></a></li>
+        </ul>
+        <ul class="nav-lower flex-spece-around">
+            <li class="nav-list"><a href="index.html" class="nav-link nav-brand">Jahid Express</a></li>
+            <li class="nav-list"><a href="cart.html" class="nav-link">
+                <span><i class="fa-solid fa-cart-shopping"></i> </span>
+                Cart-2 Product-$124.50
+            </a></li>
+        </ul>
+    </nav>
+                <!----Navbar end here---->
+                <!----Header start here----->
+    <header class="header">
+        <div class="banner flex-spece-around">
+            <marquee class="banner-title" behavior="" direction="">50% Sales going on</marquee>
+            <div class="features flex-spece-around">
+                <article class="feature flex-center">
+                    <i class="fa-solid fa-truck feature-icon"></i>
+                    <h3>Shipping within 7 days</h3>
+                </article>
+                <article class="feature flex-center">
+                    <i class="fa-brands fa-rocketchat feature-icon"></i>
+                    <h3>Support 24/7</h3>
+                </article>
+                <article class="feature flex-center">
+                    <i class="fa-regular fa-credit-card  feature-icon"></i>
+                    <h3>Safe Payment</h3>
+                </article>
+            </div>
+        </div>
+    </header>
+                <!----Header end here------->
+                <!-----main content start here----->
+    <main class="flex-center">
+        <div class="sidebar">
+<section class="categories-section">
+    <h3 class="section-title">Categories</h3>
+    <ul class="list">
+        <li class="list-item">
+            <label for="phone">
+                <input type="checkbox" id="phone" name="phone" value="phone">
+                Phone
+            </label>
+        </li>
+          <li class="list-item">
+            <label for="tablets">
+                <input type="checkbox" id="tablets" name="tablets" value="tablets">
+                Tablets
+            </label>
+        </li>
+        <li class="list-item">
+            <label for="telivision">
+                <input type="checkbox" id="telivision" name="telivision" value="telivision">
+                Telivision
+            </label>
+        </li>
+        <li class="list-item">
+            <label for="computer">
+                <input type="checkbox" id="computer" name="computer" value="computer">
+                Computer
+            </label>
+        </li>
+        <li class="list-item">
+            <label for="headphone">
+                <input type="checkbox" id="headphone" name="headphone" value="headphone">
+                Headphone
+            </label>
+        </li>
+    </ul>
+</section>
+
+<section class="price-section">
+    <h3 class="section-title">Price Range</h3>
+    <ul class="list">
+        <li class="list-item">
+            <label for="price1">
+                <input type="radio" id="price1" name="price" value="[0-20]">
+                $0-$20
+            </label>
+        </li>
+         
+        <li class="list-item">
+            <label for="price2">
+                <input type="radio" id="price2" name="price" value="[21-50]">
+                $21-$50
+            </label>
+        </li>
+        <li class="list-item">
+            <label for="price3">
+                <input type="radio" id="price3" name="price" value="[51-80]">
+                $51-$80
+            </label>
+        </li>
+        <li class="list-item">
+            <label for="price4">
+                <input type="radio" id="price4" name="price" value="[80-120]">
+                $80-$120
+            </label>
+        </li>
+        <li class="list-item">
+            <label for="price5">
+                <input type="radio" id="price5" name="price" value="[120-200]">
+                $120-$200
+            </label>
+        </li>
+    </ul>
+</section>
+<section class="shipping-section">
+    <h3 class="section-title">Shipping Option</h3>
+    <ul class="list">
+        <li class="list-item">
+            <label for="free">
+                <input type="radio" id="free" name="shipping" value="free">
+                Free Shipping
+            </label>
+        </li>
+        <li class="list-item">
+            <label for="paid">
+                <input type="radio" id="paid" name="shipping" value="paid">
+                Paid Shipping
+            </label>
+        </li>
+    </ul>
+</section>
+ </div>
+<div class="main-content">
+    <section class="action flex-spece-around">
+        <div class="action-sort">
+            <label for="sort">Sort By:</label>
+            <select name="sort" id="sort">
+                <option value="sold">Most sold first </option>
+                <option value="rating">Most rated first</option>
+                <option value="price">Cheapest first</option>
+                <option value="arrival">Newest first</option>
+                <option value="discount">Biggest discount first</option>
+            </select>
+        </div>
+        <div class="action-search">
+            <input type="text" placeholder="Secrch product">
+            <button class="btn btn-search">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </section>
+               <!---Product section start here---->
+    <section class="products">
+<article class="Product card">
+    <div class="badge">
+        <span>5 in stock</span>
+        <hr class="hr-design">
+        <span>3 sold</span>
+    </div>
+    <img class="product-img" src="image/product1.jpg" alt="product icon">
+    <div class="product-body">
+        <h3 class="product-name">Sony v-4 Headphone</h3>
+        <p>
+            <span class="dot green"></span>
+            <span class="dot black"></span>
+            <span class="dot red"></span>
+        </p>
+        <p class="product-description">
+            Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet  adipisicing elit. Accusamus asperio.... <a class="learn-more" href="product.html">Learn More</a>
+        </p>
+        <h4 class="product-price">$222.99</h4>
+        <p class="product-rating">Rating 4.5/5</p>
+        <button class="btn product-btn">Add to cart</button>
+    </div>
+</article>
+
+<article class="Product card">
+    <div class="badge">
+        <span>8 in stock</span>
+        <hr class="hr-design">
+        <span>5 sold</span>
+    </div>
+    <img class="product-img" src="image/product2.jpg" alt="product icon">
+    <div class="product-body">
+        <h3 class="product-name">Sony HD-4 Camera</h3>
+        <p>
+            <span class="dot green"></span>
+            <span class="dot black"></span>
+            <span class="dot red"></span>
+        </p>
+        <p class="product-description">
+            Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet  adipisicing elit. Accusamus asperio.... <a class="learn-more" href="product.html">Learn More</a>
+        </p>
+        <h4 class="product-price">$922.99</h4>
+        <p class="product-rating">Rating 4.9/5</p>
+        <button class="btn product-btn">Add to cart</button>
+    </div>
+</article>
+
+<article class="Product card">
+    <div class="badge">
+        <span>9 in stock</span>
+        <hr class="hr-design">
+        <span>5 sold</span>
+    </div>
+    <img class="product-img" src="image/product3.jpg" alt="product icon">
+    <div class="product-body">
+        <h3 class="product-name">Lenovo Core-i7 & 8gen Laptop</h3>
+        <p>
+            <span class="dot green"></span>
+            <span class="dot black"></span>
+            <span class="dot red"></span>
+        </p>
+        <p class="product-description">
+            Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet  adipisicing elit. Accusamus asperio.... <a class="learn-more" href="product.html">Learn More</a>
+        </p>
+        <h4 class="product-price">$21022.99</h4>
+        <p class="product-rating">Rating 7.8/5</p>
+        <button class="btn product-btn">Add to cart</button>
+    </div>
+</article>
+
+<article class="Product card">
+    <div class="badge">
+        <span>8 in stock</span>
+        <hr class="hr-design">
+        <span>6 sold</span>
+    </div>
+    <img class="product-img" src="image/product4.jpg" alt="product icon">
+    <div class="product-body">
+        <h3 class="product-name">A4tech RS-642 Keyboard</h3>
+        <p>
+            <span class="dot green"></span>
+            <span class="dot black"></span>
+            <span class="dot red"></span>
+        </p>
+        <p class="product-description">
+            Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet  adipisicing elit. Accusamus asperio.... <a class="learn-more" href="product.html">Learn More</a>
+        </p>
+        <h4 class="product-price">$122.99</h4>
+        <p class="product-rating">Rating 4.5/7</p>
+        <button class="btn product-btn">Add to cart</button>
+    </div>
+</article>
+
+<article class="Product card">
+    <div class="badge">
+        <span>5 in stock</span>
+        <hr class="hr-design">
+        <span>3 sold</span>
+    </div>
+    <img class="product-img" src="image/product5.jpg" alt="product icon">
+    <div class="product-body">
+        <h3 class="product-name">Lenovo RS-635 Mouse</h3>
+        <p>
+            <span class="dot green"></span>
+            <span class="dot black"></span>
+            <span class="dot red"></span>
+        </p>
+        <p class="product-description">
+            Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet  adipisicing elit. Accusamus asperio.... <a class="learn-more" href="product.html">Learn More</a>
+        </p>
+        <h4 class="product-price">$322.99</h4>
+        <p class="product-rating">Rating 3.5/5</p>
+        <button class="btn product-btn">Add to cart</button>
+    </div>
+</article>
+
+<article class="Product card">
+    <div class="badge">
+        <span>9 in stock</span>
+        <hr class="hr-design">
+        <span>6 sold</span>
+    </div>
+    <img class="product-img" src="image/product6.jpg" alt="product icon">
+    <div class="product-body">
+        <h3 class="product-name">Lenovo 24" LED Monitor</h3>
+        <p>
+            <span class="dot green"></span>
+            <span class="dot black"></span>
+            <span class="dot red"></span>
+        </p>
+        <p class="product-description">
+            Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet  adipisicing elit. Accusamus asperio.... <a class="learn-more" href="product.html">Learn More</a>
+        </p>
+        <h4 class="product-price">$922.99</h4>
+        <p class="product-rating">Rating 9.5/5</p>
+        <button class="btn product-btn">Add to cart</button>
+    </div>
+</article>
+    </section>
+    <div class="pagination">
+        <button class="btn pagination-btn">
+            <i class="fa-regular fa-less-than"></i>
+        </button>
+        <button class="btn pagination-btn">2</button>
+        <button class="btn pagination-btn">3</button>
+        <button class="btn pagination-btn">4</button>
+        <button class="btn pagination-btn">5</button>
+        <button class="btn pagination-btn">6</button>
+        <button class="btn pagination-btn">7</button>
+        <button class="btn pagination-btn">8</button>
+        <button class="btn pagination-btn">9</button>
+        <button class="btn pagination-btn">...</button>
+        <button class="btn pagination-btn">50</button>
+        <button class="btn pagination-btn">
+            <i class="fas fa-greater-than"></i>
+        </button>
+    </div>
+               <!----Product section end here------>
+</div>
+    </main>
+                <!-----main content ends here----->
+                  <!----footer start here---->
+    <footer class="footer flex-spece-around">
+        <div>
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="email" id="subscribe" class="footer-input" name="email" placeholder="Enter your email">
+            <button class="btn btn-subscribe" type="submit">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy;Copyright 2023 Jahid Express All rights raserd</p>
+        </div>
+    </footer>
+                 <!----footer end here---->
+    <script src="scripts/index.js"></script>
+</body>
+</html>
